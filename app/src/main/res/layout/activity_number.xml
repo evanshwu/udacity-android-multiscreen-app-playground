@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".NumberActivity">
 
+    <ListView
+        android:id="@+id/numberList"
+        android:background="@color/colorNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>

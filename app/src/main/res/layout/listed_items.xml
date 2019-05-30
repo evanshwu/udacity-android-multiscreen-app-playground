@@ -2,18 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/sub_text_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="top item"/>
+    <LinearLayout
+        android:id="@+id/imageLinearLayout"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/colorIcons"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/origin_text_item"
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textLinearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="bottom item"/>
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/sub_text_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="top item"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/origin_text_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bottom item"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+    </LinearLayout>
 </LinearLayout>

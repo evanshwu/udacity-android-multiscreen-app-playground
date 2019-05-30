@@ -18,15 +18,18 @@ public class ColorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_color);
         setTitle("Colors");
+        setTitleColor(R.color.colorBanner);
 
         ArrayList<Words> listOfWords = new ArrayList<Words>();
-        listOfWords.add(new Words("Red", "紅"));
-        listOfWords.add(new Words("Orange", "橙"));
-        listOfWords.add(new Words("Yellow", "黃"));
-        listOfWords.add(new Words("Green", "綠"));
-        listOfWords.add(new Words("Blue", "藍"));
-        listOfWords.add(new Words("Indigo", "靛"));
-        listOfWords.add(new Words("Violet", "紫"));
+
+        listOfWords.add(new Words("Black", "黑", R.drawable.color_black));
+        listOfWords.add(new Words("Brown", "咖啡", R.drawable.color_brown));
+        listOfWords.add(new Words("Dusty yellow", "髒髒的黃", R.drawable.color_dusty_yellow));
+        listOfWords.add(new Words("Gray", "灰", R.drawable.color_gray));
+        listOfWords.add(new Words("Green", "綠", R.drawable.color_green));
+        listOfWords.add(new Words("Mustard yellow", "芥末黃", R.drawable.color_mustard_yellow));
+        listOfWords.add(new Words("Red", "紅", R.drawable.color_red));
+        listOfWords.add(new Words("White", "白", R.drawable.color_white));
 
         WordAdapter arrayAdapter = new WordAdapter(this, listOfWords);
 

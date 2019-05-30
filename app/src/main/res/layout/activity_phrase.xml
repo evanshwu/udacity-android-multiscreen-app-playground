@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".PhraseActivity">
 
+    <ListView
+        android:id="@+id/phraseList"
+        android:background="@color/colorPhrases"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>
